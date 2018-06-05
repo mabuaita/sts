@@ -1,1 +1,0 @@
-select * from Case_Pre_Post where Case_Pre_Post_Id = 269474

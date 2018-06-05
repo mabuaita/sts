@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5c6831f5-053d-42b9-ab5d-f1e29a94386e" name="Default" comment="deletes files older than 3 days after checking for thier existance in S3">
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0.tgz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/Python-ast.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/Python-ast.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/_warnings.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/_warnings.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/asdl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/asdl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/ast.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/ast.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/bltinmodule.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/bltinmodule.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/ceval.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/ceval.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/ceval_gil.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/clinic/bltinmodule.c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/clinic/import.c.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/codecs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/codecs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/compile.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/compile.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/condvar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dtoa.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dtoa.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dup2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynamic_annotations.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynamic_annotations.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_aix.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_dl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_hpux.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_next.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_shlib.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_shlib.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_stub.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/dynload_win.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/errors.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/errors.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/fileutils.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/fileutils.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/formatter_unicode.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/formatter_unicode.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/frozen.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/frozen.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/frozenmain.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/frozenmain.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/future.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/future.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getargs.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getargs.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getcompiler.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getcompiler.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getcopyright.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getcopyright.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getopt.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getopt.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getplatform.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getplatform.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getversion.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/getversion.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/graminit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/graminit.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/import.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/import.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/importdl.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/importdl.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/importdl.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/importlib.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/importlib_external.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/makeopcodetargets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/marshal.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/marshal.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/modsupport.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/modsupport.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/mysnprintf.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/mysnprintf.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/mystrtoul.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/mystrtoul.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/opcode_targets.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/peephole.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/peephole.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyarena.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyarena.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyctype.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyctype.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyfpe.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyfpe.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyhash.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pyhash.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pylifecycle.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pylifecycle.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pymath.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pymath.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystate.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystate.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystrcmp.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystrcmp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystrhex.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystrhex.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystrtod.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pystrtod.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pythonrun.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pythonrun.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pytime.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/pytime.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/random.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/random.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/sigcheck.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/strdup.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/structmember.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/structmember.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/symtable.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/symtable.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/sysmodule.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/sysmodule.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/thread.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/thread.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/thread_foobar.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/thread_nt.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/thread_pthread.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/traceback.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/traceback.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Python-3.6.0/Python/wordcode_helpers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/activate" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/activate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/activate.csh" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/activate.csh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/activate.fish" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/activate.fish" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/easy_install" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/easy_install" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/pip" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/pip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/python" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/python" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/bin/wheel" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/bin/wheel" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/pip-selfcheck.json" beforeDir="false" afterPath="$PROJECT_DIR$/../mddx/pip-selfcheck.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/attachZip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttach.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttach.py-" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttach.py.20170116" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttach.py.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttach.py_20161207" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttach.py_20161220" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI.py-" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI.py.orig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI.py.orig2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI.py2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI36.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI64.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI64.py3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/cpILAttachNDI64.py4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/db-comm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mddx/util/mergeFile" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="FileDel.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FileDel.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-334">
+              <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_pydev_execfile.py" pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="mohamed abuaita &lt;mabuaita@yahoo.com&gt;" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/FileDel.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="34" />
+    <option name="y" value="38" />
+    <option name="width" value="1400" />
+    <option name="height" value="791" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="iqc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="iqc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="iqc" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="FileDel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="iqc" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FileDel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.FileDel" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5c6831f5-053d-42b9-ab5d-f1e29a94386e" name="Default" comment="" />
+      <created>1526606148572</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526606148572</updated>
+    </task>
+    <task id="LOCAL-00001" summary="deletes files older than 3 days after checking for thier existance in S3">
+      <created>1527773976136</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527773976144</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="34" y="38" width="1400" height="791" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32914925" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39888424" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection Results" order="7" weight="0.32914925" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LOCAL_CHANGES_DETAILS_PREVIEW_SHOWN" value="true" />
+    <MESSAGE value="deletes files older than 3 days after checking for thier existance in S3" />
+    <option name="LAST_COMMIT_MESSAGE" value="deletes files older than 3 days after checking for thier existance in S3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FileDel.py</url>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/FileDel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileDel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileDel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" lean-forward="true" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_1.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FileDel.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334">
+          <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
