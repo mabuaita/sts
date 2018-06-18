@@ -1,0 +1,60 @@
+# Test pyodbc connection. Result is 42.
+# Note parameters in connection string, <PARAMETER>.
+
+import pyodbc
+import sys
+import os
+import os.path
+import re
+import boto3
+import zipfile
+from botocore.exceptions import ClientError
+import botocore.session
+
+conn = pyodbc.connect('DRIVER=FreeTDS;SERVER=DBHost;PORT=1433;DATABASE=MDDXIT;UID=sa;PWD=aiHwZ2!Qp2Xf;TDS_Version=8.0;')
+resource = boto3.resource('s3')
+bucket = resource.Bucket('iqctest')
+client = boto3.client('s3', 'us-west-2')
+exist = True
+AttachPath = '/attachments/'
+#for bucket in s3.buckets.all():
+#    print(bucket.name)
+
+with conn:
+
+   cursor = conn.cursor()
+   cursor.execute("select c.CopyToCl, c.CustomFieldID, cf.CaseID, cf.FileServerName From dbo.[CaseFileUpload] cf join dbo.[CustomField] c on cf.CustomFieldID = c.CustomFieldID where c.CopyToCl = 1 and cf.FileServerName is not NULL")
+   rows = cursor.fetchall()
+   for row in rows:
+	srcZipFile = zipfile.ZipFile("row.CaseID", "w")
+      	src = '/attachments/' + row.FileServerName
+        if not os.path.isfile(src):
+           print("ERROR: %s Does not exist in UploadedFiles, even though it's in the database." % (src))
+           cursor.execute("UPDATE dbo.[CustomField] SET CopyToCl = 0 where CustomFieldID = '%s'" %(row.CustomFieldID))
+           continue
+#        assert os.path.isfile(src), "source_file(%s) does not exist." % (src)
+        dst = 'uiqcfolder' + src
+	print src, row.CaseID, row.FileServerName
+#      srcAttach = os.path.join(AttachPath, row.FileServerName)
+#      if not os.path.isfile(srcAttach): 
+#		print("ERROR: %s Does not exist in UploadedFiles, even though it's in the database." % (srcAttach)) 
+#                continue
+	srcZipFile = str(row.CaseID) + '.zip'
+        srcPath = os.path.join('/tmp/', srcZipFile)
+        print src, dst
+        try:
+                client.upload_file(src, 'iqctest', dst)
+        except ClientError as ce:
+                print(ce.response)
+                print(ce.response['Error']['Code'])
+		if ce.response['Error']['Code'] == "NoSuchKey":
+                        exist = False
+			print("ERROR: %s Does not exist in S3, even though it's in the database." % (src))
+                        continue	
+                else:
+                	raise ce
+      #if 'exist' == "True":
+	cursor.execute("UPDATE dbo.[CustomField] SET CopyToCl = 0 where CustomFieldID = '%s'" %(row.CustomFieldID))
+#      else:
+#                cursor.execute("UPDATE dbo.[CustomFieldAttachmentToBeTransfered] SET IsTransfered = 'false' where FileName = '%s'" %(row.FileName))
+      #s3.Object(src).delete()

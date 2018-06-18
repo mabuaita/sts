@@ -1,0 +1,14 @@
+#!/bin/bash
+
+function main() {
+        pushd `dirname ${0}` > /dev/null
+        scripts_dir=`pwd`
+        popd > /dev/null
+        sts_dir=`dirname ${scripts_dir}`
+        source ${sts_dir}/python_env/bin/activate
+	script_name=`basename ${0}`
+        python ${sts_dir}/mddx/util/${script_name}.py $@
+        deactivate
+}
+
+main ${@}
